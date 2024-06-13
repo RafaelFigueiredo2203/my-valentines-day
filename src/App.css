@@ -1,0 +1,94 @@
+.initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 480px;
+}
+
+.initial span {
+  color: red;
+}
+.initial h2 {
+  color: white;
+}
+
+.buttonLoop {
+  font-weight: bold;
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.buttonLoop:active .front {
+  transform: translateY(-2px);
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.child h1 {
+  font-size: 32px;
+  color:white;
+  opacity: 0;
+  animation: fadeIn 7s infinite;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+.child h2 {
+  font-size: 32px;
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+}
+
+@keyframes fadeIn {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.polaroid {
+  width: 200px;
+  padding: 20px;
+  background-color: #353535;
+  border:0;
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 7s infinite;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
